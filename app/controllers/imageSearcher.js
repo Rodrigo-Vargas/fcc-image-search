@@ -1,14 +1,16 @@
 'use strict';
 
 var request = require('request');
-var config = require('../../config.js');
+
+var apiKey = process.env.API_KEY;
+var csiKey = process.env.CSI_KEY;
 
 function imageSearcher () {
   this.getImages = function(req, res){
     var query = req.params.query;
     var url = "https://www.googleapis.com/customsearch/v1?key=" 
-              + config.API_KEY 
-              + "&cx=" +  config.CSI_KEY
+              + apiKey 
+              + "&cx=" +  csiKey
               + "&searchType=image"
               + "&q=" + query
               + "&num=10";
