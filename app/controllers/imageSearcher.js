@@ -1,7 +1,7 @@
 'use strict';
 
 var request = require('request');
-var config = require(process.cwd() + '/config');
+var config = require('../../config.js');
 
 function imageSearcher () {
   this.getImages = function(req, res){
