@@ -1,27 +1,25 @@
 {
-  "name": "clementinejs",
-  "version": "1.0.2",
-  "description": "A light-weight MEAN stack boilerplate.",
+  "name": "rvg-image-search",
+  "version": "1.0.0",
+  "description": "A image search microservice.",
   "main": "server.js",
-  "scripts": {
-    "start": "gulp"
-  },
+  "scripts": { },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnstonbl01/clementinejs"
+    "url": "git+https://github.com/Rodrigo-Vargas/fcc-image-search"
   },
-  "homepage": "http://johnstonbl01.github.io/clementinejs/",
-  "bugs": "https://github.com/johnstonbl01/clementinejs/issues",
+  "homepage": "http://rodrigovg.com.br/",
+  "bugs": "https://github.com/Rodrigo-Vargas/fcc-image-search/issues",
   "keywords": [
-    "MEAN",
     "MongoDB",
     "Express",
-    "Angular",
     "Node",
     "javascript",
-    "boilerplate"
+    "image",
+    "search",
+    "api"
   ],
-  "author": "Blake Johnston",
+  "author": "Rodrigo Vargas",
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.3",

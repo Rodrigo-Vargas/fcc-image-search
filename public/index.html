@@ -3,28 +3,43 @@
 <html>
 
    <head>
-      <title>Clementine.js - The elegant and lightweight full-stack boilerplate.</title>
-      <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
-      <link href="/public/css/main.css" rel="stylesheet" type="text/css">  
+      <title>Image Search Microservice.</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link href="/public/css/main.css" rel="stylesheet" type="text/css">
    </head>
 
    <body>
       <div class="container">
-         <img src="/public/img/clementine_150.png" />
-         <br />
-         <p class="clementine-text">Clementine.js</p>
-      </div>
-
-      <div class="container">
-         <p>You have clicked the button <span id="click-nbr"></span> times.</p>   
-         <br />
-         <div class="btn-container">
-            <button type="submit" class="btn btn-add">CLICK ME!</button>
-            <button class="btn btn-delete">RESET</button>
+         <div class="page-header">
+            <h1>Image Search Microservice</h1>
          </div>
-      </div>
 
-      <script type="text/javascript" src="/controllers/clickController.client.js"></script>   
+         <blockquote>
+            <h2>User stories:</h2>
+            <ul>
+               <li>User Story: I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+               <li>User Story: I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+               <li>User Story: I can get a list of the most recently submitted search strings.</li>
+            </ul>
+         </blockquote>
+
+         <div>
+            <h2>Examples of search:</h2>
+            <a href="http://rvg-image-search.herokuapp.com/search/dogs">
+               http://rvg-image-search.herokuapp.com/search/dogs
+            </a>
+
+            <div>
+               <span>This is will search for results that relative to 'dogs'</span>
+            </div>            
+         </div>
+
+         <div>
+            <h2>Retrieve last queries</h2>
+            <a href="http://rvg-image-search.herokuapp.com/latest/searchs">
+               http://rvg-image-search.herokuapp.com/latest/searchs
+            </a>
+         </div>
+      </div>      
    </body>
-
 </html>
